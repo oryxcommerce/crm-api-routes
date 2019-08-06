@@ -7,7 +7,7 @@
   },
   "description": "Machine-readable, always up-to-date Oryx CRM REST API route specifications",
   "author": "David Lemarier (https://github.com/lemarier)",
-  "main": "lib/index.js",
+  "main": "openapi/api.oryxcrm.com/index.json",
   "scripts": {
     "lint": "standard",
     "routes:lint": "speccy lint openapi/api.oryxcrm.com/index.json --skip openapi-tags",
