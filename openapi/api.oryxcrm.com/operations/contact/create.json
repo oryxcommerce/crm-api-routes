@@ -45,6 +45,7 @@
       "application/json": {
         "schema": {
           "type": "object",
+          "additionalProperties": true,
           "properties": {
             "firstName": {
               "description": "Contact first name.",
@@ -58,7 +59,7 @@
               "description": "Contact email.",
               "type": "string"
             },
-            "schema": {
+            "schemas": {
               "description": "Contact schema.",
               "type": "object"
             }

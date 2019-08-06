@@ -25,12 +25,12 @@
   "paths": {
     "/contact": {
       "post": {
-        "$ref": "operations/contact/create-contact.json"
+        "$ref": "operations/contact/create.json"
       }
     },
     "/contact/{contact_id}": {
       "get": {
-        "$ref": "operations/contact/get-contact.json"
+        "$ref": "operations/contact/get.json"
       }
     }
   }

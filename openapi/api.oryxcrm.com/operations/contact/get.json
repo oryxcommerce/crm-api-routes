@@ -7,7 +7,17 @@
     "description": "API method documentation",
     "url": "https://developer.oryxcrm.com/v1/contact/#get-a-single-contact"
   },
-  "parameters": [],
+  "parameters": [
+    {
+      "name": "contact_id",
+      "in": "path",
+      "schema": {
+        "type": "integer"
+      },
+      "required": true,
+      "description": "contact_id parameter"
+    }
+  ],
   "responses": {
     "200": {
       "description": "response",
@@ -15,7 +25,7 @@
         "application/json": {
           "schema": {
             "properties": {
-              "id": {
+              "contact_id": {
                 "type": "number"
               },
               "firstName": {
@@ -40,9 +50,6 @@
     }
   ],
   "x-changes": [],
-  "x-oryx": {
-    "customField": true
-  },
   "requestBody": {
     "content": {
       "application/json": {
@@ -61,8 +68,7 @@
               "description": "Contact email.",
               "type": "string"
             }
-          },
-          "required": ["email"]
+          }
         }
       }
     }
