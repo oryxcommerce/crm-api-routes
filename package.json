@@ -1,0 +1,37 @@
+{
+  "name": "oryx-crm-api-routes",
+  "version": "0.0.0-development",
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  },
+  "description": "Machine-readable, always up-to-date Oryx CRM REST API route specifications",
+  "author": "David Lemarier (https://github.com/lemarier)",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oryxcommerce/crm-api-routes.git"
+  },
+  "keywords": [
+    "octokit"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oryxcommerce/crm-api-routes/issues"
+  },
+  "homepage": "https://github.com/oryxcommerce/crm-api-routes#readme",
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "*"
+  },
+  "files": [
+    "openapi",
+    "lib"
+  ]
+}

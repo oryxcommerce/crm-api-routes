@@ -1,0 +1,71 @@
+{
+  "summary": "Create a new contact",
+  "description": "",
+  "operationId": "contact-create_contact",
+  "tags": ["contact"],
+  "externalDocs": {
+    "description": "API method documentation",
+    "url": "https://developer.oryxcrm.com/v1/contact/#create-a-new-contact"
+  },
+  "parameters": [],
+  "responses": {
+    "201": {
+      "description": "response",
+      "content": {
+        "application/json": {
+          "schema": {
+            "properties": {
+              "firstName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-code-samples": [
+    {
+      "lang": "JS",
+      "source": "oryxcrm.contact.post({\n  email: 'david@lemarier.ca'\n})"
+    }
+  ],
+  "x-changes": [],
+  "requestBody": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "description": "Contact first name.",
+              "type": "string"
+            },
+            "lastName": {
+              "description": "Contact last name.",
+              "type": "string"
+            },
+            "email": {
+              "description": "Contact email.",
+              "type": "string"
+            },
+            "schema": {
+              "description": "Contact schema.",
+              "type": "object"
+            }
+          },
+          "required": ["email"]
+        }
+      }
+    }
+  }
+}

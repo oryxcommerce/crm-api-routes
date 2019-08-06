@@ -1,0 +1,70 @@
+{
+  "summary": "Get contact",
+  "description": "",
+  "operationId": "contact-get_contact",
+  "tags": ["contact"],
+  "externalDocs": {
+    "description": "API method documentation",
+    "url": "https://developer.oryxcrm.com/v1/contact/#get-a-single-contact"
+  },
+  "parameters": [],
+  "responses": {
+    "200": {
+      "description": "response",
+      "content": {
+        "application/json": {
+          "schema": {
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-code-samples": [
+    {
+      "lang": "JS",
+      "source": "oryxcrm.contact.get({\n  email: 'david@lemarier.ca'\n})"
+    }
+  ],
+  "x-changes": [],
+  "x-oryx": {
+    "customField": true
+  },
+  "requestBody": {
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "description": "Contact first name.",
+              "type": "string"
+            },
+            "lastName": {
+              "description": "Contact last name.",
+              "type": "string"
+            },
+            "email": {
+              "description": "Contact email.",
+              "type": "string"
+            }
+          },
+          "required": ["email"]
+        }
+      }
+    }
+  }
+}
