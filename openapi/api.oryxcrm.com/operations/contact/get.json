@@ -1,7 +1,7 @@
 {
   "summary": "Get contact",
   "description": "",
-  "operationId": "contact-get_contact",
+  "operationId": "contact-get",
   "tags": ["contact"],
   "externalDocs": {
     "description": "API method documentation",

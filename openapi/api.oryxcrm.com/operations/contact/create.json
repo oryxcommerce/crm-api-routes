@@ -1,7 +1,7 @@
 {
   "summary": "Create a new contact",
   "description": "",
-  "operationId": "contact-create_contact",
+  "operationId": "contact-create",
   "tags": ["contact"],
   "externalDocs": {
     "description": "API method documentation",
@@ -61,7 +61,8 @@
             },
             "schemas": {
               "description": "Contact schema.",
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             }
           },
           "required": ["email"]
