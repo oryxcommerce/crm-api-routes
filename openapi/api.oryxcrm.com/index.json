@@ -23,7 +23,7 @@
     "url": "https://developer.oryxcrm.com/v1/"
   },
   "paths": {
-    "/contact": {
+    "/contact/create": {
       "post": {
         "$ref": "operations/contact/create.json"
       }
